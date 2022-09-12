@@ -1,0 +1,1369 @@
+{
+	"info": {
+		"_postman_id": "70d5ba05-0e0f-48e0-bc55-e2fb29be393c",
+		"name": "FYP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Supplier",
+			"item": [
+				{
+					"name": "get_supplier",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmYyYWYzMGQ4NzU5MzQyZWZjY2Y4ZWQiLCJNYW51ZmFjdHVyZXJfRW1haWwiOiJhZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE2NjA0MzU1OTMsImV4cCI6MTY2MDUyMTk5M30.jYTA4eboyvwDxBvyMkMO1jymS766PsN3u4xDxCqPGJw",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "supplierss",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "supplier@gmail.com",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmE2NWZjMzU1NmI5NmNkZjllMjU4NWEiLCJlbWFpbCI6ImhhbXphQGdtYWlsLmNvbSIsInBob25lbm8iOiI4OTg5NzU0IiwiaWF0IjoxNjU1NjAyNDQ5LCJleHAiOjE2NTU2ODg4NDl9._JTNGyXzHFNLqvjYrFzXpCrKJYhzgHvp9-KHGQKIKHQ",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "user_Id",
+									"value": "62a65fc3556b96cdf9e2585a",
+									"type": "default",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8800/api/get_supplier_details",
+							"host": [
+								"localhost"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"get_supplier_details"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add_Supplier",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmYyYWYzMGQ4NzU5MzQyZWZjY2Y4ZWQiLCJNYW51ZmFjdHVyZXJfRW1haWwiOiJhZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE2NjA0MzU1OTMsImV4cCI6MTY2MDUyMTk5M30.jYTA4eboyvwDxBvyMkMO1jymS766PsN3u4xDxCqPGJw",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "Supplier_Name",
+									"value": "jerry",
+									"type": "default"
+								},
+								{
+									"key": "Supplier_Address",
+									"value": "ubit  Karachi university",
+									"type": "default"
+								},
+								{
+									"key": "Supplier_Phone",
+									"value": "03161620898",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8800/api/add_supplier",
+							"host": [
+								"localhost"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"add_supplier"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add_Supplier (live)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmYyYWYzMGQ4NzU5MzQyZWZjY2Y4ZWQiLCJNYW51ZmFjdHVyZXJfRW1haWwiOiJhZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE2NjA0MzU1OTMsImV4cCI6MTY2MDUyMTk5M30.jYTA4eboyvwDxBvyMkMO1jymS766PsN3u4xDxCqPGJw",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "Supplier_Name",
+									"value": "tommy",
+									"type": "default"
+								},
+								{
+									"key": "Supplier_Address",
+									"value": "KARACHI",
+									"type": "default"
+								},
+								{
+									"key": "Supplier_Phone",
+									"value": "03161620898",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://supplychain20.herokuapp.com/api/add_supplier",
+							"protocol": "https",
+							"host": [
+								"supplychain20",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"add_supplier"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_supplier (live)",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmYyYWYzMGQ4NzU5MzQyZWZjY2Y4ZWQiLCJNYW51ZmFjdHVyZXJfRW1haWwiOiJhZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE2NjA0MzU1OTMsImV4cCI6MTY2MDUyMTk5M30.jYTA4eboyvwDxBvyMkMO1jymS766PsN3u4xDxCqPGJw",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "Supplier_Name",
+									"value": "Fizza123",
+									"type": "default"
+								},
+								{
+									"key": "Supplier_Address",
+									"value": "ubit  Karachi university",
+									"type": "default"
+								},
+								{
+									"key": "Supplier_Phone",
+									"value": "03161620898",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://supplychain20.herokuapp.com/api/get_supplier_details",
+							"protocol": "https",
+							"host": [
+								"supplychain20",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"get_supplier_details"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Stock",
+			"item": [
+				{
+					"name": "get_stock (live)",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmYyYWYzMGQ4NzU5MzQyZWZjY2Y4ZWQiLCJNYW51ZmFjdHVyZXJfRW1haWwiOiJhZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE2NjA0MzU1OTMsImV4cCI6MTY2MDUyMTk5M30.jYTA4eboyvwDxBvyMkMO1jymS766PsN3u4xDxCqPGJw",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "https://supplychain20.herokuapp.com/api/get_stock_details",
+							"protocol": "https",
+							"host": [
+								"supplychain20",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"get_stock_details"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_stock",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmYyYWYzMGQ4NzU5MzQyZWZjY2Y4ZWQiLCJNYW51ZmFjdHVyZXJfRW1haWwiOiJhZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE2NjA0MzU1OTMsImV4cCI6MTY2MDUyMTk5M30.jYTA4eboyvwDxBvyMkMO1jymS766PsN3u4xDxCqPGJw",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "localhost:8800/api/get_stock_details",
+							"host": [
+								"localhost"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"get_stock_details"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add_stock",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmYyYWYzMGQ4NzU5MzQyZWZjY2Y4ZWQiLCJNYW51ZmFjdHVyZXJfRW1haWwiOiJhZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE2NjA0MzU1OTMsImV4cCI6MTY2MDUyMTk5M30.jYTA4eboyvwDxBvyMkMO1jymS766PsN3u4xDxCqPGJw",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "Stock_Category",
+									"value": "beef",
+									"type": "default"
+								},
+								{
+									"key": "Stock_Price",
+									"value": "50005",
+									"type": "default"
+								},
+								{
+									"key": "Supplier_ID",
+									"value": "62f19c856c02721652e04c7e",
+									"type": "default"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8800/api/add_stock",
+							"host": [
+								"localhost"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"add_stock"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add_stock_live",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmYyYWYzMGQ4NzU5MzQyZWZjY2Y4ZWQiLCJNYW51ZmFjdHVyZXJfRW1haWwiOiJhZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE2NjA0MzU1OTMsImV4cCI6MTY2MDUyMTk5M30.jYTA4eboyvwDxBvyMkMO1jymS766PsN3u4xDxCqPGJw",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "Stock_Category",
+									"value": "chicky",
+									"type": "default"
+								},
+								{
+									"key": "Stock_Price",
+									"value": "899800",
+									"type": "default"
+								},
+								{
+									"key": "Supplier_ID",
+									"value": "62f19c856c02721652e04c7e",
+									"type": "default"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "https://supplychain20.herokuapp.com/api/add_stock",
+							"protocol": "https",
+							"host": [
+								"supplychain20",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"add_stock"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Package",
+			"item": [
+				{
+					"name": "get_package",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmYyYWYzMGQ4NzU5MzQyZWZjY2Y4ZWQiLCJNYW51ZmFjdHVyZXJfRW1haWwiOiJhZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE2NjA0MzU1OTMsImV4cCI6MTY2MDUyMTk5M30.jYTA4eboyvwDxBvyMkMO1jymS766PsN3u4xDxCqPGJw",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "role",
+									"value": "user",
+									"type": "default",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8800/api/get_package_details",
+							"host": [
+								"localhost"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"get_package_details"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_package (live)",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmYyYWYzMGQ4NzU5MzQyZWZjY2Y4ZWQiLCJNYW51ZmFjdHVyZXJfRW1haWwiOiJhZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE2NjA0MzU1OTMsImV4cCI6MTY2MDUyMTk5M30.jYTA4eboyvwDxBvyMkMO1jymS766PsN3u4xDxCqPGJw",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "role",
+									"value": "user",
+									"type": "default",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "https://supplychain20.herokuapp.com/api/get_package_details?",
+							"protocol": "https",
+							"host": [
+								"supplychain20",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"get_package_details"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add_package",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmYyYWYzMGQ4NzU5MzQyZWZjY2Y4ZWQiLCJNYW51ZmFjdHVyZXJfRW1haWwiOiJhZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE2NjA0MzU1OTMsImV4cCI6MTY2MDUyMTk5M30.jYTA4eboyvwDxBvyMkMO1jymS766PsN3u4xDxCqPGJw",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "Package_Category",
+									"value": "Chicken roll",
+									"type": "default"
+								},
+								{
+									"key": "Package_Price",
+									"value": "1200",
+									"type": "default"
+								},
+								{
+									"key": "Manufacturer_ID",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "Stock_ID",
+									"value": "62f1a8ad339e195611b017f8",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8800/api/add_package",
+							"host": [
+								"localhost"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"add_package"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add_package (live)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmYyYWYzMGQ4NzU5MzQyZWZjY2Y4ZWQiLCJNYW51ZmFjdHVyZXJfRW1haWwiOiJhZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE2NjA0MzU1OTMsImV4cCI6MTY2MDUyMTk5M30.jYTA4eboyvwDxBvyMkMO1jymS766PsN3u4xDxCqPGJw",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "Package_Category",
+									"value": "Chicken chatni",
+									"type": "default"
+								},
+								{
+									"key": "Package_Price",
+									"value": "1200",
+									"type": "default"
+								},
+								{
+									"key": "Manufacturer_ID",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "Stock_ID",
+									"value": "62f1a8ad339e195611b017f8",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://supplychain20.herokuapp.com/api/add_package",
+							"protocol": "https",
+							"host": [
+								"supplychain20",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"add_package"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "lOGIN",
+			"item": [
+				{
+					"name": "manufacturer_signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "sooni@gmail.com",
+									"type": "default"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "default"
+								},
+								{
+									"key": "phoneno",
+									"value": "9090",
+									"type": "default",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8008/api/signin",
+							"host": [
+								"localhost"
+							],
+							"port": "8008",
+							"path": [
+								"api",
+								"signin"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "sooni@gmail.com",
+									"disabled": true
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"disabled": true
+								},
+								{
+									"key": "phoneno",
+									"value": "9090",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "manufacturer_signin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "admin",
+									"type": "default"
+								},
+								{
+									"key": "email",
+									"value": "admin6@gmail.commm20",
+									"type": "default"
+								},
+								{
+									"key": "password",
+									"value": "1234569",
+									"type": "default"
+								},
+								{
+									"key": "phoneno",
+									"value": "8080",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:7007/api/User_Signup",
+							"host": [
+								"localhost"
+							],
+							"port": "7007",
+							"path": [
+								"api",
+								"User_Signup"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "JERRY",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "jerry@gmail.com",
+									"disabled": true
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"disabled": true
+								},
+								{
+									"key": "phoneno",
+									"value": "0987654",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "manufacturer_signin (live)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "admin",
+									"type": "default"
+								},
+								{
+									"key": "email",
+									"value": "admin6@gmail.commm20",
+									"type": "default"
+								},
+								{
+									"key": "password",
+									"value": "1234569",
+									"type": "default"
+								},
+								{
+									"key": "phoneno",
+									"value": "8080",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:7007/api/User_Signup",
+							"host": [
+								"localhost"
+							],
+							"port": "7007",
+							"path": [
+								"api",
+								"User_Signup"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "JERRY",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "jerry@gmail.com",
+									"disabled": true
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"disabled": true
+								},
+								{
+									"key": "phoneno",
+									"value": "0987654",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "manufacturer_sigup (live)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "Manufacturer_Name",
+									"value": "admin",
+									"type": "default"
+								},
+								{
+									"key": "Manufacturer_Phone",
+									"value": "admin6@gmail.commm20",
+									"type": "default"
+								},
+								{
+									"key": "Manufacturer_Email",
+									"value": "1234569",
+									"type": "default"
+								},
+								{
+									"key": "Password",
+									"value": "8080",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://supplychain20.herokuapp.com/api/for_signup",
+							"protocol": "https",
+							"host": [
+								"supplychain20",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"for_signup"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Distributor",
+			"item": [
+				{
+					"name": "add_distributor",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmYyYWYzMGQ4NzU5MzQyZWZjY2Y4ZWQiLCJNYW51ZmFjdHVyZXJfRW1haWwiOiJhZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE2NjA0MzU1OTMsImV4cCI6MTY2MDUyMTk5M30.jYTA4eboyvwDxBvyMkMO1jymS766PsN3u4xDxCqPGJw",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "Distributor_Name",
+									"value": "syeda",
+									"type": "default"
+								},
+								{
+									"key": "Distributor_Address",
+									"value": "mass.com , university",
+									"type": "default"
+								},
+								{
+									"key": "Distributor_Phone",
+									"value": "0312789634",
+									"type": "default"
+								},
+								{
+									"key": "Manufacturer_ID",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "Package_ID",
+									"value": "62f1ac81fd7b31a65f61c7d4",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8800/api/add_distributor",
+							"host": [
+								"localhost"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"add_distributor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add_distributor Copy",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmYyYWYzMGQ4NzU5MzQyZWZjY2Y4ZWQiLCJNYW51ZmFjdHVyZXJfRW1haWwiOiJhZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE2NjA0MzU1OTMsImV4cCI6MTY2MDUyMTk5M30.jYTA4eboyvwDxBvyMkMO1jymS766PsN3u4xDxCqPGJw",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "Distributor_Name",
+									"value": "syeda",
+									"type": "default"
+								},
+								{
+									"key": "Distributor_Address",
+									"value": "mass.com , university",
+									"type": "default"
+								},
+								{
+									"key": "Distributor_Phone",
+									"value": "0312789634",
+									"type": "default"
+								},
+								{
+									"key": "Manufacturer_ID",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "Package_ID",
+									"value": "62f1ac81fd7b31a65f61c7d4",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8800/api/add_distributor",
+							"host": [
+								"localhost"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"add_distributor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add_distributor(live)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmYyYWYzMGQ4NzU5MzQyZWZjY2Y4ZWQiLCJNYW51ZmFjdHVyZXJfRW1haWwiOiJhZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE2NjA0MzU1OTMsImV4cCI6MTY2MDUyMTk5M30.jYTA4eboyvwDxBvyMkMO1jymS766PsN3u4xDxCqPGJw",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "Distributor_Name",
+									"value": "asad",
+									"type": "default"
+								},
+								{
+									"key": "Distributor_Address",
+									"value": "mass.com , university",
+									"type": "default"
+								},
+								{
+									"key": "Distributor_Phone",
+									"value": "0312789634",
+									"type": "default"
+								},
+								{
+									"key": "Manufacturer_ID",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "Package_ID",
+									"value": "62f1ac81fd7b31a65f61c7d4",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://supplychain20.herokuapp.com/api/add_distributor",
+							"protocol": "https",
+							"host": [
+								"supplychain20",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"add_distributor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_distributor",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmYyYWYzMGQ4NzU5MzQyZWZjY2Y4ZWQiLCJNYW51ZmFjdHVyZXJfRW1haWwiOiJhZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE2NjA0MzU1OTMsImV4cCI6MTY2MDUyMTk5M30.jYTA4eboyvwDxBvyMkMO1jymS766PsN3u4xDxCqPGJw",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "localhost:8800/api/get_distributor_details",
+							"host": [
+								"localhost"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"get_distributor_details"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_distributor (live)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmYyYWYzMGQ4NzU5MzQyZWZjY2Y4ZWQiLCJNYW51ZmFjdHVyZXJfRW1haWwiOiJhZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE2NjA0MzU1OTMsImV4cCI6MTY2MDUyMTk5M30.jYTA4eboyvwDxBvyMkMO1jymS766PsN3u4xDxCqPGJw",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://supplychain20.herokuapp.com/api/get_distributor_details",
+							"protocol": "https",
+							"host": [
+								"supplychain20",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"get_distributor_details"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Role",
+			"item": [
+				{
+					"name": "add_role",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "role_type",
+									"value": "user",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8800/api/for_add_role",
+							"host": [
+								"localhost"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"for_add_role"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_role",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "add_product",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmYyYWYzMGQ4NzU5MzQyZWZjY2Y4ZWQiLCJNYW51ZmFjdHVyZXJfRW1haWwiOiJhZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE2NjA0MzU1OTMsImV4cCI6MTY2MDUyMTk5M30.jYTA4eboyvwDxBvyMkMO1jymS766PsN3u4xDxCqPGJw",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "Product_Name",
+									"value": "Asad Rizwan",
+									"type": "default"
+								},
+								{
+									"key": "Product_Category",
+									"value": "good",
+									"type": "default"
+								},
+								{
+									"key": "Product_Price",
+									"value": "123456",
+									"type": "default"
+								},
+								{
+									"key": "Package_ID",
+									"value": "62f405b3f10a8665de435140",
+									"type": "default"
+								},
+								{
+									"key": "Supplier_ID",
+									"value": "62f8d7d4686edcf5071b81f7",
+									"type": "default"
+								},
+								{
+									"key": "Distributor_ID",
+									"value": "62f8f306f4a153e4f22d785c",
+									"type": "default"
+								},
+								{
+									"key": "Manufacturer_ID",
+									"value": "62f2af30d8759342efccf8ed",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8800/api/add_product",
+							"host": [
+								"localhost"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"add_product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add_product (live)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmYyYWYzMGQ4NzU5MzQyZWZjY2Y4ZWQiLCJNYW51ZmFjdHVyZXJfRW1haWwiOiJhZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE2NjA0MzU1OTMsImV4cCI6MTY2MDUyMTk5M30.jYTA4eboyvwDxBvyMkMO1jymS766PsN3u4xDxCqPGJw",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "Product_Name",
+									"value": "fizza syeda",
+									"type": "default"
+								},
+								{
+									"key": "Product_Category",
+									"value": "perect",
+									"type": "default"
+								},
+								{
+									"key": "Product_Price",
+									"value": "9090",
+									"type": "default"
+								},
+								{
+									"key": "Package_ID",
+									"value": "62f405b3f10a8665de435140",
+									"type": "default"
+								},
+								{
+									"key": "Supplier_ID",
+									"value": "62f8d7d4686edcf5071b81f7",
+									"type": "default"
+								},
+								{
+									"key": "Distributor_ID",
+									"value": "62f8f306f4a153e4f22d785c",
+									"type": "default"
+								},
+								{
+									"key": "Manufacturer_ID",
+									"value": "62f2af30d8759342efccf8ed",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://supplychain20.herokuapp.com/api/add_product",
+							"protocol": "https",
+							"host": [
+								"supplychain20",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"add_product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "for table",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8800/api/fortable",
+							"host": [
+								"localhost"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"fortable"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "for table (live)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://supplychain20.herokuapp.com/api/fortable",
+							"protocol": "https",
+							"host": [
+								"supplychain20",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"fortable"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_product(live)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmYyYWYzMGQ4NzU5MzQyZWZjY2Y4ZWQiLCJNYW51ZmFjdHVyZXJfRW1haWwiOiJhZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE2NjA0MzU1OTMsImV4cCI6MTY2MDUyMTk5M30.jYTA4eboyvwDxBvyMkMO1jymS766PsN3u4xDxCqPGJw",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://supplychain20.herokuapp.com/api/get_product_details",
+							"protocol": "https",
+							"host": [
+								"supplychain20",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"get_product_details"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_product(live) Copy",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmYyYWYzMGQ4NzU5MzQyZWZjY2Y4ZWQiLCJNYW51ZmFjdHVyZXJfRW1haWwiOiJhZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE2NjA0MzU1OTMsImV4cCI6MTY2MDUyMTk5M30.jYTA4eboyvwDxBvyMkMO1jymS766PsN3u4xDxCqPGJw",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "localhost:8800/api/get_product_details",
+							"host": [
+								"localhost"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"get_product_details"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
